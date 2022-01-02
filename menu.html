@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Serial Cereal - Menu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
+    body {
+      background-color: grey;
+      background-image: url("menu.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: soft-light;
+      font-family: 'Pushster', cursive;
+
+    }
+
+    nav {
+      padding: 20px;
+      display: flex;
+    }
+
+    .spreader {
+      flex: 1
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline;
+      font-size: xx-large;
+      padding-right: 1.5rem;
+    }
+
+    nav a:link {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:visited {
+      color: black;
+    }
+
+    .logo {
+      width: 200px;
+      filter: brightness(0);
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      color: rgb(44, 45, 54);
+    }
+
+    .menuSectionHeader {
+      font-size: 3rem;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column ul {
+      list-style-type: none;
+      font-size: 2rem;
+    }
+
+    .column li {
+      font-size: xx-large;
+      padding-left: 150px;
+      line-height: 1.5em;
+    }
+  </style>
+</head>
+
+
+
+<body>
+  <nav>
+    <a href="index.html">
+      <img class="logo" src="logo.png" alt="Serial Cereal">
+    </a>
+
+    <div class="spreader" />
+    <ul>
+      <li><a href="menu.html">Our Menu</a></li>
+      <li><a href="about.html">Order Online</a></li>
+      <li><a href="contact.html">Opening Times</a></li>
+      <li><a href="index.html">Find us</a></li>
+      <li><a href="about.html">Allergies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="row">
+    <div class="column">
+      <div class="menuSectionHeader">Cereals</div>
+      <ul>
+        <li>Evesees</li>
+        <li>Cocoapuffs</li>
+        <li>Marshmallow Joy</li>
+        <li>Cinnamon Bear</li>
+        <li>Sonic Loops</li>
+        <li>Mary Muesli</li>
+        <li>Josephine Gems</li>
+        <li>Daddy Pops</li>
+        <li>Mummy Munchies</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <div class="menuSectionHeader">Drinks</div>
+      <ul>
+        <li>Cereal Hot Chocolate</li>
+        <li>Coffee</li>
+        <li>Yorkshire Tea</li>
+        <li>Apple Juice</li>
+        <li>Orange Juice</li>
+        <li>Water</li>
+        <li>Cereal Freak Shake</li>
+        <li>Milkshake</li>
+      </ul>      
+    </div>
+
+    <div class="column">
+      <div class="menuSectionHeader">Special Offers</div>
+      <ul>
+        <li>Rise and shine</li>
+      </ul>            
+    </div>
+  </div>
+
+
+</body>
+
+</html>
