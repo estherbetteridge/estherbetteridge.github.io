@@ -4,12 +4,18 @@
 <head>
   <title>Serial Cereal</title>
   <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
     body {
-      background-color: rgb(168, 106, 168);
+      background-color: grey;
       background-image: url("loops.jpg");
+      background-blend-mode: soft-light;
+      font-family: 'Pushster', cursive;
+
     }
 
-   
+
     .site_title {
       font-size: 50px;
       color: rgb(255, 255, 255);
@@ -48,6 +54,35 @@
     a:visited {
       color: black;
     }
+
+    .logo {
+      width: 200px;
+      filter: brightness(0);
+    }
+
+    .moto {
+      font-size: 6rem;
+      padding-left: 250px;
+      padding-top: 100px;
+    }
+
+    .founder {
+      font-size: 2rem;
+      padding-left: 1250px;
+      padding-top: 100px;
+    }
+
+    q {
+      quotes: "“""”""‘""’";
+    }
+
+    q::before {
+      content: open-quote;
+    }
+
+    q::after {
+      content: close-quote;
+    }
   </style>
 </head>
 
@@ -55,7 +90,8 @@
 
 <body>
   <nav>
-    <div class="site_title">Serial Cereal</div>
+    <img class="logo" src="logo.png" alt="Serial Cereal">
+
     <div class="spreader" />
     <ul>
       <li><a href="index.html">Our Menu</a></li>
@@ -66,6 +102,15 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+
+  <div class="moto">
+    <q>Eating outside the box</q>
+  </div>
+
+  <div class="founder">
+    By Esther
+  </div>
+
 </body>
 
 </html>
