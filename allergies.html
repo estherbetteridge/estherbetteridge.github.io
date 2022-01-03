@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Serial Cereal - Allergies</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
+    body {
+      background-color: grey;
+      background-image: url("cerealbowls.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: soft-light;
+      font-family: 'Pushster', cursive;
+
+    }
+
+    nav {
+      padding: 20px;
+      display: flex;
+    }
+
+    .spreader {
+      flex: 1
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline;
+      font-size: xx-large;
+      padding-right: 1.5rem;
+    }
+
+    nav a:link {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:visited {
+      color: black;
+    }
+
+    .logo {
+      width: 200px;
+      filter: brightness(0);
+    }
+
+    .allergiesTitle {
+      font-size: 5rem;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .allergiesTable {
+      display: flex;
+      justify-content: center;
+    }
+
+    .container table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    .allergiesTable td {
+      text-align: center;
+    }
+  </style>
+</head>
+
+
+
+<body>
+  <nav>
+    <a href="index.html">
+      <img class="logo" src="logo.png" alt="Serial Cereal">
+    </a>
+
+    <div class="spreader" />
+    <ul>
+      <li><a href="menu.html">Our Menu</a></li>
+      <li><a href="order_online.html">Order Online</a></li>
+      <li><a href="opening_times.html">Opening Times</a></li>
+      <li><a href="find_us.html">Find us</a></li>
+      <li><a href="allergies.html">Allergies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <div class="allergiesTitle">Allergies</div>
+
+    <table class="allergiesTable">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Contains Milk</th>
+          <th>Contains Gluten</th>
+          <th>Contains Eggs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Evesees</td>
+          <td></td>
+          <td></td>
+          <td>&#10003;</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

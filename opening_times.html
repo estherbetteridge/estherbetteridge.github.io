@@ -5,10 +5,11 @@
   <title>Serial Cereal - Menu</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
     body {
       background-color: grey;
-      background-image: url("menu.jpg");
+      background-image: url("cerealbowls.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-blend-mode: soft-light;
@@ -51,35 +52,38 @@
       filter: brightness(0);
     }
 
-    .column {
-      float: left;
-      width: 33.33%;
-      color: rgb(44, 45, 54);
+    .blackBoardContainer {
+      display: flex;
+      justify-content: center;
     }
 
-    .menuSectionHeader {
-      font-size: 3rem;
+    .blackBoard {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      padding-top: 50px;
+      font-size: x-large;
       text-align: center;
-      text-decoration: underline;
+      font-family: 'Fredericka the Great', cursive;
+      width: 500px;
+      height: 500px;
+      border: 2px dashed white;
     }
 
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
+    .blackBoardTitle {
+      text-decoration: dashed underline;
+      font-size: 2.5rem;
     }
 
-    .column ul {
-      list-style-type: none;
-      font-size: 2rem;
+    .blackBoard table {
+      margin-top: 50px;
+      width: 100%;
     }
 
-    .column li {
-      font-size: xx-large;
-      padding-left: 150px;
-      line-height: 1.5em;
+    .blackBoard table td {
+      height: 50px;
     }
+
   </style>
 </head>
 
@@ -102,43 +106,21 @@
     </ul>
   </nav>
 
-  <div class="row">
-    <div class="column">
-      <div class="menuSectionHeader">Cereals</div>
-      <ul>
-        <li>Evesees</li>
-        <li>Cocoa crunch</li>
-        <li>Ginger step</li>
-        <li>Marshmallow Joy</li>
-        <li>Cinnamon Bear</li>
-        <li>Sonic Loops</li>
-        <li>Mary Muesli</li>
-        <li>Josephine Gems</li>
-        <li>Daddy Pops</li>
-        <li>Mummy Munchies</li>
-      </ul>
+  <div class="blackBoardContainer">
+    <div class="blackBoard">
+      <div class="blackBoardTitle">OPENING HOURS</div>
+
+      <table border=1>
+        <tr><td>MON</td><td>6AM to 7PM</td></tr>
+        <tr><td>TUES</td><td>6AM to 7PM</td></tr>
+        <tr><td>WED</td><td>6AM to 7PM</td></tr>
+        <tr><td>THUR</td><td>6AM to 7PM</td></tr>
+        <tr><td>FRI</td><td>6AM to 7PM</td></tr>
+        <tr><td>SAT</td><td>6:30AM to 7:30PM</td></tr>
+        <tr><td>SUN</td><td>CLOSED</td></tr>
+      </table>
     </div>
 
-    <div class="column">
-      <div class="menuSectionHeader">Drinks</div>
-      <ul>
-        <li>Cereal Hot Chocolate</li>
-        <li>Coffee</li>
-        <li>Yorkshire Tea</li>
-        <li>Apple Juice</li>
-        <li>Orange Juice</li>
-        <li>Water</li>
-        <li>Cereal Freak Shake</li>
-        <li>Milkshake</li>
-      </ul>      
-    </div>
-
-    <div class="column">
-      <div class="menuSectionHeader">Special Offers</div>
-      <ul>
-        <li>Rise and shine</li>
-      </ul>            
-    </div>
   </div>
 
 
