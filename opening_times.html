@@ -57,6 +57,18 @@
       justify-content: center;
     }
 
+    .behindblackBoard {
+      background-color: red;
+      color: white;
+      padding: 20px;
+      padding-top: 50px;
+      font-size: x-large;
+      text-align: center;
+      font-family: 'Fredericka the Great', cursive;
+      width: 560px;
+      height: 560px;
+    }
+
     .blackBoard {
       background-color: black;
       color: white;
@@ -68,6 +80,9 @@
       width: 500px;
       height: 500px;
       border: 2px dashed white;
+      position: relative;
+      top:20px;
+      left:20px;
     }
 
     .blackBoardTitle {
@@ -83,7 +98,6 @@
     .blackBoard table td {
       height: 50px;
     }
-
   </style>
 </head>
 
@@ -107,20 +121,41 @@
   </nav>
 
   <div class="blackBoardContainer">
-    <div class="blackBoard">
-      <div class="blackBoardTitle">OPENING HOURS</div>
-
-      <table border=1>
-        <tr><td>MON</td><td>6AM to 7PM</td></tr>
-        <tr><td>TUES</td><td>6AM to 7PM</td></tr>
-        <tr><td>WED</td><td>6AM to 7PM</td></tr>
-        <tr><td>THUR</td><td>6AM to 7PM</td></tr>
-        <tr><td>FRI</td><td>6AM to 7PM</td></tr>
-        <tr><td>SAT</td><td>6:30AM to 7:30PM</td></tr>
-        <tr><td>SUN</td><td>CLOSED</td></tr>
-      </table>
+    <div class="behindBlackBoard">
+      <div class="blackBoard">
+        <div class="blackBoardTitle">OPENING HOURS</div>
+        <table border=1>
+          <tr>
+            <td>MON</td>
+            <td>6AM to 7PM</td>
+          </tr>
+          <tr>
+            <td>TUES</td>
+            <td>6AM to 7PM</td>
+          </tr>
+          <tr>
+            <td>WED</td>
+            <td>6AM to 7PM</td>
+          </tr>
+          <tr>
+            <td>THUR</td>
+            <td>6AM to 7PM</td>
+          </tr>
+          <tr>
+            <td>FRI</td>
+            <td>6AM to 7PM</td>
+          </tr>
+          <tr>
+            <td>SAT</td>
+            <td>6:30AM to 7:30PM</td>
+          </tr>
+          <tr>
+            <td>SUN</td>
+            <td>CLOSED</td>
+          </tr>
+        </table>
+      </div>
     </div>
-
   </div>
 
 
